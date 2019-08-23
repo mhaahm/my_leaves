@@ -1,0 +1,17 @@
+{{ form_start(form) }}
+<div class="row">
+    <div class="col-md-12">{{ form_row(form.name) }}</div>
+</div>
+<div class="row">
+    <div class="col-md-12">{{ form_row(form.limitDays) }}</div>
+</div>
+<div class="row modal-footer">
+    {{ form_widget(form) }}
+         <button class="btn btn-primary pull-left">{{ button|default('Save record') }}</button>
+    {{ form_end(form) }}
+    <button type="button" class="btn btn-danger pull-right" id="close_calendar_event"
+            data-dismiss="modal">
+        Close
+        <i class="fa ti-close icon-align"></i>
+    </button>
+</div>

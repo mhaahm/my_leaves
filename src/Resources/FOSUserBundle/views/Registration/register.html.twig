@@ -1,0 +1,32 @@
+{% extends '@FOSUser/layout.html.twig' %}
+    {% block content %}
+        {% block fos_user_content %}
+            {% trans_default_domain 'FOSUserBundle' %}
+            <div class="bs-example col-md-4">
+                <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+                    <li class="active">
+                        <a href="#home" data-toggle="tab">{{ 'Sample User space'|trans }}</a>
+                    </li>
+                    <li>
+                        <a href="#profile" data-toggle="tab">{{ 'Entreprise space'|trans }}</a>
+                    </li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="home">
+                        {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': ''}}) }}
+                        {{ form_widget(form) }}
+                        <div>
+                            <input type="submit" value="{{ 'registration.submit'|trans }}" class="btn btn-lg btn-primary btn-block"/>
+                        </div>
+                        {{ form_end(form) }}
+                    </div>
+                    <div class="tab-pane fade" id="profile">
+                        espace entreprise
+                    </div>
+                </div>
+            </div>
+
+
+
+        {% endblock %}
+    {% endblock %}

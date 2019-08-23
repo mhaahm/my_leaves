@@ -1,0 +1,71 @@
+<aside class="left-side sidebar-offcanvas">
+    <!-- sidebar: style can be found in sidebar-->
+    <section class="sidebar">
+        <div id="menu" role="navigation">
+            <div class="nav_profile">
+                <div class="media profile-left">
+                    <a class="pull-left profile-thumb" href="#">
+                        <img src = "{{ asset('img/authors/avatar1.jpg') }}" class="img-circle" alt="User Image"></a>
+                    <div class="content-profile">
+                        <h4 class="media-heading">Addison</h4>
+                        <ul class="icon-list">
+                            <li>
+                                <a href="users.html">
+                                    <i class="fa fa-fw ti-user"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="lockscreen.html">
+                                    <i class="fa fa-fw ti-lock"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="edit_user.html">
+                                    <i class="fa fa-fw ti-settings"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login.html">
+                                    <i class="fa fa-fw ti-shift-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <ul class="navigation">
+
+                <li>
+                    <a href="{{ path('home') }}">
+                        <i class="menu-icon ti-layout-list-large-image"></i>
+                        <span class="mm-text ">Dashboard</span>
+                    </a>
+                </li>
+                <li class="menu-dropdown">
+                    <a href="#">
+                        <i class="menu-icon ti-calendar"></i>
+                        <span>Calendar</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="{{ path('leave') }}">
+                                <i class=" menu-icon fa fa-fw ti-video-clapper"></i>
+                                <span>Leaves</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ path('leave.category.index') }}">
+                                <i class=" menu-icon fa fa-fw ti-video-clapper"></i>
+                                <span>Leaves Category</span>
+
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+            <!-- / .navigation --> </div>
+        <!-- menu --> </section>
+</aside>
